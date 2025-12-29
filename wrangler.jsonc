@@ -1,0 +1,21 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "narra-r2-upload",
+	"main": "./src/index.ts",
+	"compatibility_date": "2025-10-08",
+	"upload_source_maps": true,
+	"dispatch_namespaces": [
+		{
+			"binding": "DISPATCHER",
+			"namespace": "my-dispatch-namespace",
+			"remote": true
+		}
+	],
+	"observability": {
+		"enabled": true
+	},
+	"vars": {
+		"CLOUDFLARE_ACCOUNT_ID": "2d6cf234ddf0fab18a56d93de6cb26c3",
+		"READONLY": "false"
+	}
+}
